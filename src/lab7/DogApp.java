@@ -1,5 +1,8 @@
 package lab7;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class DogApp {
     public static void main(String[] args) {
         // create object สร้างวัตถุ
@@ -20,6 +23,15 @@ public class DogApp {
         System.out.println(dog2.getName());
         System.out.println(dog2.getAge());
         System.out.println(dog2.getHairColor());
+
+        List<Dog> dogList = new ArrayList<Dog>();
+        dogList.add(dog1);
+        dogList.add(dog2);
+        System.out.println(dogList);
+
+        for (Dog d:dogList) {
+            System.out.println(d.getName());
+        }
 
 
     }//main
